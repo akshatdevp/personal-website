@@ -1,0 +1,90 @@
+*{
+	box-sizing : border-box;
+}
+:root {
+	background : black;
+	/* animation: fadeIn 0.8s ; */
+	/* background-image: url("maybe_website_wallpaper_if_self_absorbed_gg.jpeg"); */
+	/* background-size: cover; */
+}
+
+body {
+	
+	animation: fadeIn 0.8s ;
+}
+.my-image{
+	grid-area : my-image;
+	/* background-image: url("self-portrait-bw.jpeg"); */
+}
+.main-text{
+	display : grid;
+	grid-template-areas : 
+	"empty hey hey my-image"
+	"empty . . my-image";
+	font-family : sans-serif;
+}
+
+.hey {
+	grid-area : hey;
+	color : white;
+	/* height : 2em; */
+	font-size : 5em;
+}
+
+/* .introduction { */
+/* 	grid-area: name; */
+/* 	color : red; */
+/* 	/1* height :2em; *1/ */
+/* 	font-size : 5em; */
+/* } */
+
+.empty-space {
+	grid-area : empty;
+}
+
+.upper-space {
+	height : 3em;
+}
+
+a:link{
+	color : white;	
+	text-decoration: none;
+}
+
+.links{
+	float : right;
+	font-size : 1.1em;	
+}
+
+.links a{
+	padding : 0.8em;
+}
+
+@keyframes fadeIn 
+{
+	from {opacity : 0.2;}
+	to {opactiy :1;}
+}
+
+.fadeInAnimation{
+	/* animation : animate .6s cubic-bezier(0.2, 0.6, 0.2, 1) */
+	animation: fadeIn 1.5s ;
+}
+
+.icons{
+	display : flex;
+	justify-content : baseline;
+	column-gap: 4em;
+	margin-left : 23em;
+	/* background : red; */
+	/* height : 5em; */
+}
+
+i.fa.fa-2xl.icon {
+    font-size: 3em;
+    color : white;
+}
+
+.lower-space{
+	/* height : 10em; */
+}
