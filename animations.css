@@ -1,0 +1,6 @@
+
+@keyframes fadeIn 
+{
+	from {opacity : 0.2;}
+	to {opactiy :1;}
+}

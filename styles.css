@@ -1,15 +1,18 @@
+@import "animations.css";
 *{
 	box-sizing : border-box;
 }
 :root {
 	background : black;
+
 	/* animation: fadeIn 0.8s ; */
 	/* background-image: url("maybe_website_wallpaper_if_self_absorbed_gg.jpeg"); */
 	/* background-size: cover; */
 }
 
 body {
-	
+	font-family : sans-serif;
+	margin : 0;	
 	animation: fadeIn 0.8s ;
 }
 .my-image{
@@ -21,22 +24,14 @@ body {
 	grid-template-areas : 
 	"empty hey hey my-image"
 	"empty . . my-image";
-	font-family : sans-serif;
 }
 
 .hey {
 	grid-area : hey;
 	color : white;
-	/* height : 2em; */
 	font-size : 5em;
 }
 
-/* .introduction { */
-/* 	grid-area: name; */
-/* 	color : red; */
-/* 	/1* height :2em; *1/ */
-/* 	font-size : 5em; */
-/* } */
 
 .empty-space {
 	grid-area : empty;
@@ -52,32 +47,23 @@ a:link{
 }
 
 .links{
-	float : right;
+	display : flex;
+	justify-content: end;
 	font-size : 1.1em;	
 }
 
 .links a{
 	padding : 0.8em;
+	color : white;
 }
 
-@keyframes fadeIn 
-{
-	from {opacity : 0.2;}
-	to {opactiy :1;}
-}
 
-.fadeInAnimation{
-	/* animation : animate .6s cubic-bezier(0.2, 0.6, 0.2, 1) */
-	animation: fadeIn 1.5s ;
-}
 
 .icons{
 	display : flex;
-	justify-content : baseline;
+	justify-content : center;
 	column-gap: 4em;
-	margin-left : 23em;
-	/* background : red; */
-	/* height : 5em; */
+	/* margin-left : 23em; */
 }
 
 i.fa.fa-2xl.icon {
@@ -85,6 +71,42 @@ i.fa.fa-2xl.icon {
     color : white;
 }
 
-.lower-space{
-	/* height : 10em; */
+.about-content{
+	/* color: #ff4b1f;  */
+	/* color: -webkit-linear-gradient(to right, #ff9068, #ff4b1f);   */
+	/* color: linear-gradient(to right, #ff9068, #ff4b1f);  */
+	color : white;
+	font-size : 2em;
 }
+.about-header{
+	padding-top : 1.1em;
+	font-size : 2.5em;
+}
+.about-body{
+	display : flex;
+	flex-direction: column;
+	gap : 0px;	
+	margin-left : 157px;
+	/* margin-right : 50vw; */
+	/* margin-left : 10em; */
+	/* margin-right : 10em; */
+}
+
+.red {
+	color : red;
+}
+
+h1.about{
+	margin : 0;
+
+}
+
+.gradient_text{
+    background: linear-gradient(90deg, rgba(255,136,0,1) 0%, rgba(223,38,6,1) 46%, rgba(223,202,6,1) 69%);
+    /* background: linear-gradient(to right, #f2994a, #f2c94c); */
+
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    }
