@@ -22,6 +22,11 @@ const projectsList = [
 		"link" : link + "PostnDisplay-"
 	},
 	{
+		"name" : "Sorting visualizer",
+		"description" : "React-ts + tailwind to visualize a sorting algorithm.",
+		"link" : link + "visualize-sort-react-ts"
+	},
+	{
 		"name" : "WriterForAll",
 		"description" : "WORK IN PROGRESS : A Flutter + Flask app that is a 1 stop shop for writers.",
 		"link" : "NA"
