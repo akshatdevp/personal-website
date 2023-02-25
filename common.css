@@ -1,0 +1,23 @@
+
+@import "styles.css";
+
+.common-content{
+	/* color: #ff4b1f;  */
+	/* color: -webkit-linear-gradient(to right, #ff9068, #ff4b1f);   */
+	/* color: linear-gradient(to right, #ff9068, #ff4b1f);  */
+	color : white;
+	font-size : 2em;
+}
+.common-header{
+	padding-top : 1.1em;
+	font-size : 2.5em;
+}
+.common-body{
+	display : flex;
+	flex-direction: column;
+	gap : 0px;	
+	margin-left : 157px;
+	/* margin-right : 50vw; */
+	/* margin-left : 10em; */
+	/* margin-right : 10em; */
+}
